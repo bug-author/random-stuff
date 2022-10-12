@@ -6,8 +6,7 @@ def recursiveSol(number, count, string):
     for i in range(1, len(string)):
         if string[i-1] == string[i]:
             return count
-
-    # multiply current number with each of its digits
+        
     possibleAnswers = []
 
     for i in str(number):
@@ -19,9 +18,9 @@ def recursiveSol(number, count, string):
 
 
 print(recursiveSol(8, 0, str(8)))
-print(recursiveSol(134, 0, str(134)))
-print(recursiveSol(198, 0, str(198)))
-print(recursiveSol(121, 0, str(121)))
+#print(recursiveSol(134, 0, str(134)))
+#print(recursiveSol(198, 0, str(198)))
+#print(recursiveSol(121, 0, str(121)))
 
 
 """
